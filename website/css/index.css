@@ -226,9 +226,6 @@ body {
   padding: 10px;
 }
 
-
-
-/* 表格样式 - 从HTML移植 */
 body {
     font-family: 'Noto Sans', sans-serif;
     line-height: 1.6;
@@ -247,11 +244,10 @@ table.academic-table {
     border: none;
 }
 
-/* General alignment for all th and td in this table */
 table.academic-table th,
 table.academic-table td {
     border: 1px solid #e0e0e0;
-    padding: 8px 10px;
+    padding: 3px 3px;
     text-align: center; /* Base alignment for all cells */
     vertical-align: middle;
 }
@@ -294,16 +290,7 @@ table.academic-table sub {
 table.academic-table i {
     font-style: italic;
 }
-table.academic-table code {
-    font-family: 'SFMono-Regular', Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    background-color: #f0f0f0; /* This is the background for the code tag itself */
-    padding: 0.2em 0.4em;
-    border-radius: 3px;
-    font-size: 0.95em;
-    /* If code is display:inline (default), text-align from parent td should work. */
-    /* If it was display:block, it would need its own text-align. */
-    /* This rule above now explicitly sets text-align for code in first-child td. */
-}
+
 
 /* Cell coloring with increased specificity */
 table.academic-table td.cell-first  { background-color: #98cc70; }
