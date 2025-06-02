@@ -331,7 +331,7 @@ table.academic-table td.cell-below  { background-color: #ff8787; }
 }
 
 .game-video-inner { /* 这是实际的 <video> 标签 */
-  max-width: 100%;  /* 视频最大宽度不超过包裹层 */
+  width: 100%;  /* 视频最大宽度不超过包裹层 */
   max-height: 100%; /* 视频最大高度不超过包裹层 */
   object-fit: contain; /* 确保视频内容完整显示，并按比例缩放以适应其在包裹层内的可用空间 */
   display: block; /* 确保视频是块级元素 */
