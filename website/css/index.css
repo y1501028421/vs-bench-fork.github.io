@@ -248,29 +248,24 @@ table.academic-table th,
 table.academic-table td {
     border: 1px solid #e0e0e0;
     padding: 3px 3px;
-    text-align: center; /* Base alignment for all cells */
+    text-align: center;
     vertical-align: middle;
 }
 
-/* 确保表头所有单元格文字居中 */
 table.academic-table thead th {
-    text-align: center !important; /* 使用!important确保优先级 */
+    text-align: center !important;
 }
 
-/* --- START MODIFIED SECTION FOR FIRST COLUMN ALIGNMENT --- */
-/* Specifically target the first data cell (td) in each row of the table body */
-/* AND any <code> tag directly inside it. */
 table.academic-table tbody tr td:first-child,
 table.academic-table tbody tr td:first-child code {
     text-align: center;
 }
-/* --- END MODIFIED SECTION FOR FIRST COLUMN ALIGNMENT --- */
 
 table.academic-table thead tr:first-child th {
     border-top: 2px solid #333;
 }
 table.academic-table tr.midrule-below td {
-  border-bottom: 1.5px solid #555; /* 定义了中等分隔线的样式 */
+  border-bottom: 1.5px solid #555;
 }
 table.academic-table tbody tr:last-child td {
     border-bottom: 2px solid #333;
@@ -281,11 +276,11 @@ table.academic-table th {
     color: #212529;
 }
 table.academic-table sub {
-  font-size: 0.85em;  /* MODIFIED: Was 0.75em, now larger */
-  line-height: 0; 
-  position: relative; 
-  vertical-align: baseline; 
-  bottom: -0.15em; /* MODIFIED: Adjusted baseline slightly for new size */
+  font-size: 0.85em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  bottom: -0.15em;
 }
 table.academic-table i {
     font-style: italic;
@@ -319,34 +314,30 @@ table.academic-table td.cell-below  { background-color: #ff8787; }
 }
 
 .video-outer-wrapper {
-  width: 100%; /* 包裹层宽度占满列 */
-  aspect-ratio: 16 / 16; /* 设置包裹层的统一宽高比，例如16:9。这是“外部框”的形状 */
-  background-color: rgb(255, 255, 255); /* 设置“视频外面”的“空白”填充颜色，例如浅灰色。您可以改成 #fff (白色) 或其他颜色 */
-  display: flex; /* 使用 Flexbox 来将内部视频居中 */
-  justify-content: center; /* 水平居中内部视频 */
-  align-items: center;   /* 垂直居中内部视频 */
-  overflow: hidden; /* 防止内部视频意外溢出（一般不会）*/
+  width: 100%;
+  aspect-ratio: 16 / 16;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto;
 }
 
-.game-video-inner { /* 这是实际的 <video> 标签 */
-  width: 100%;  /* 视频最大宽度不超过包裹层 */
-  max-height: 100%; /* 视频最大高度不超过包裹层 */
-  object-fit: contain; /* 确保视频内容完整显示，并按比例缩放以适应其在包裹层内的可用空间 */
-  display: block; /* 确保视频是块级元素 */
-  /* 注意：如果视频本身也有黑边（比如视频源就是带黑边的），这里的 background-color 可以设为 transparent */
-  /* 或者如果希望视频本身的 letterbox 也是特定颜色，可以给 .game-video-inner 也设置 background-color */
+.game-video-inner {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
-/* 下方的文字标题样式保持不变 */
-/* .column > .has-text-centered p { ... } */
 
-img.figure-image { /* 应用到您的图片上 */
-  display: block; /* 使图片成为块级元素，便于使用 margin: auto 来居中 */
+img.figure-image {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%; /* 图片最大宽度不超过其父容器 */
-  height: auto;    /* 高度自动，保持图片比例 */
-  margin-bottom: 1rem; /* 图片和其下方标题的间距 */
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
